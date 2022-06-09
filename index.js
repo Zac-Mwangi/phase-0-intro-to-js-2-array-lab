@@ -29,15 +29,13 @@ function prependCat(name){
 
 function removeLastCat(){
     const cats = ['Milo', 'Otis', 'Garfield']
-    let removeTheLastCat = cats.splice(-1);
-    return([...cats])
-    // return([...cats,...removeTheLastCat])
+    let removeTheLastCat = cats.slice(0,2);
+    return removeTheLastCat
 }
 
 function removeFirstCat(){
     const cats = ['Milo', 'Otis', 'Garfield']
-    let removeTheFirstCat = cats.splice(0,1);
-    // console.log([...cats])
-    return([...cats])
+    let removeTheFirstCat = cats.slice(1,3);
+    return removeTheFirstCat
 }
 
